@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #222;
+        }
+        header {
+            background-color: #111;
+            color: white;
+            padding: 10px 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background-color: #333;
+        }
+        .content {
+            padding: 20px;
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+        footer {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <div>
+            <a href="#" onclick="showPage('home')">ГЛАВНАЯ</a>
+        </div>
+        <div>
+            <a href="#" onclick="showPage('page1')">1 НЕДЕЛЯ</a>
+            <a href="#" onclick="showPage('page2')">2 НЕДЕЛЯ</a>
+            <a href="#" onclick="showPage('page3')">3 НЕДЕЛЯ</a>
+        </div>
+    </nav>
+</header>
+
+<div id="home" class="content active">
+    <h1>Учебная практика ПМ 01</h1>
+    <p>Это главная страница вашего сайта.</p>
+</div>
+
+<div id="page1" class="content">
+    <h1>Разработка консольных и графических приложений</h1>
+    <p>Содержимое первой страницы.</p>
+</div>
+
+<div id="page2" class="content">
+    <h1>Разработка АИС</h1>
+    <p>Содержимое второй страницы.</p>
+</div>
+
+<div id="page3" class="content">
+    <h1>Разработка мобильного приложения</h1>
+    <p>Содержимое третьей страницы.</p>
+</div>
+
+<footer>
+    <div  class="container">
+        <p>&copy; 2024 <a href="https://github.com/IPrizOn/site-component-accounting" target="_blank">Посмотреть код сайта</a></p>
+    </div>
+</footer>
+
+<script>
+    function showPage(pageId) {
+        var pages = document.querySelectorAll('.content');
+        pages.forEach(function(page) {
+            page.classList.remove('active');
+        });
+
+        var activePage = document.getElementById(pageId);
+        activePage.classList.add('active');
+    }
+</script>
+</body>
+</html>
