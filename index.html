@@ -7,15 +7,29 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            font-size: large;
             margin: 0;
-            padding: 0;
+            padding: 20px;
             background-color: #f0f0f0;
             color: #222;
+        }
+        h1 {
+            padding: 20px;
+            text-align: center;
         }
         header {
             background-color: #111;
             color: white;
-            padding: 10px 20px;
+            padding: 20px 100px;
+        }
+        article {
+            background-color: #fff;
+            padding: 80px;
+            margin-left: 400px;
+            margin-right: 400px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         nav {
             display: flex;
@@ -25,7 +39,7 @@
         nav a {
             color: white;
             text-decoration: none;
-            padding: 14px 20px;
+            padding: 20px 40px;
             border-radius: 5px;
             transition: background 0.3s;
         }
@@ -33,7 +47,8 @@
             background-color: #333;
         }
         .content {
-            padding: 20px;
+            padding: 40px;
+            background-color: #DCDCDC;
             display: none;
         }
         .active {
@@ -43,7 +58,7 @@
             background-color: #111;
             color: white;
             text-align: center;
-            padding: 10px 0;
+            padding: 20px 0;
             position: relative;
             bottom: 0;
             width: 100%;
@@ -66,28 +81,251 @@
 </header>
 
 <div id="home" class="content active">
-    <h1>Учебная практика ПМ 01</h1>
-    <p>Это главная страница вашего сайта.</p>
+    <h1>Учебная практика УП.01 по ПМ.01</h1>
+        <article>
+            <h2>Цель учебной практики:</h2>
+            <p>
+                Учебная практика УП.01 «Разработка модулей программного обеспечения для компьютерных систем» 
+                по ПМ.01 «Разработка модулей программного обеспечения для компьютерных систем» 
+                нацелена на отработку теоретических знаний и получение практического опыта в области разработки программных модулей, 
+                разработки графических приложений, разработки мобильного приложения, 
+                разработки сайта, их тестирования и документации.
+            </p>
+            <h2>Задачи учебной практики включали в себя:</h2>
+            <ul>
+                <li>Решить задачи в виде консольных и графических приложений.</li>
+                <li>Разработать АИС.</li>
+                <li>Разработать мобильное приложение.</li>
+                <li>Разработать сайт.</li>
+                <li>Разработать руководство пользователя.</li>
+            </ul>
+        </article>
 </div>
 
 <div id="page1" class="content">
     <h1>Разработка консольных и графических приложений</h1>
-    <p>Содержимое первой страницы.</p>
+    <article>
+        <h2>Задача 1</h2>
+        <p>
+            Ввести с консоли n-размерность матрицы a [n] [n]. 
+            Задать значения элементов матрицы в интервале значений от -n до n с помощью датчика случайных чисел. 
+            Преобразовать строки матрицы таким образом, чтобы элементы, равные нулю, располагались после всех остальных.
+        </p>
+        <div style="text-align: center;">
+            <p>Блок-схема:</p>
+            <img src="images/sheme1.png">
+            <p>Результат:</p>
+            <img src="images/result1.png">
+            <br></br>
+        </div>
+
+        <h2>Задача 2</h2>
+        <p>
+            Реализовать методы сложения, вычитания, умножения и деления объектов (для тех классов, объекты которых могут поддерживать арифметические действия). 
+            Определить класс Интервал с учетом включения/невключения концов. 
+            Создать методы по определению пересечения и объединения интервалов, причем интервалы, не имеющие общих точек, пересекаться/объединятся не могут. 
+            Объявить массив/список/множество и n интервалов и определить расстояние между самыми удаленными концами.
+        </p>
+        <div style="text-align: center;">
+            <p>Диаграмма классов:</p>
+            <img src="images/sheme2.png">
+            <p>Результат:</p>
+            <img src="images/result2.png">
+            <br></br>
+        </div>
+
+        <h2>Задача 3</h2>
+        <p>
+            Создать приложение, удовлетворяющее требованиям, приведенным в задании. 
+            Наследование применять только в тех заданиях, в которых это логически обосновано. 
+            Аргументировать принадлежность классу каждого создаваемого метода и корректно переопределить для каждого класса методы equals(), hashCode(), toString().
+            Создать объект класса Дерево, используя классы Лист, Ветка. 
+            Методы: зацвести, опасть листьям, покрыться инеем, пожелтеть листьям.
+        </p>
+        <div style="text-align: center;">
+            <p>Диаграмма классов:</p>
+            <img src="images/sheme3.png">
+            <p>Результат:</p>
+            <img src="images/result3.png">
+            <br></br>
+        </div>
+
+        <h2>Задача 4</h2>
+        <p>
+            Создать класс Cinema с внутренним классом, с помощью объектов которого можно хранить информацию об адресах кинотеатров, фильмах и времени начала сеансов.
+        </p>
+        <div style="text-align: center;">
+            <p>Диаграмма классов:</p>
+            <img src="images/sheme4.png">
+            <p>Результат:</p>
+            <img src="images/result4.png">
+            <br></br>
+        </div>
+
+        <h2>Задача 5</h2>
+        <p>
+            В тексте найти первую подстроку максимальной длины, не содержащую букв.
+        </p>
+        <div style="text-align: center;">
+            <p>Блок-схема:</p>
+            <img src="images/sheme5.png">
+            <p>Результат:</p>
+            <img src="images/result5.png">
+            <br></br>
+        </div>
+
+        <h2>Задача 6</h2>
+        <p>
+            Выполнить задания на основе задачи № 3, контролируя состояние потоков ввода/вывода. 
+            При возникновении ошибок, связанных с корректностью выполнения математических операций, генерировать и обрабатывать исключительные ситуации. 
+            Предусмотреть обработку исключений, возникающих при нехватке памяти, отсутствии требуемой записи (объекта) в файле, недопустимом значении поля и т. д. 
+            Выполнить задания из задачи № 3, реализуя собственные обработчики исключений и исключения ввода/вывода.
+        </p>
+        <div style="text-align: center;">
+            <p>Диаграмма классов:</p>
+            <img src="images/sheme6.png">
+            <p>Результат:</p>
+            <img src="images/result6.png">
+            <br></br>
+        </div>
+
+        <h2>Задача 7</h2>
+        <p>
+            Составить программу получения на экране рисунков.
+        </p>
+        <div style="text-align: center;">
+            <p>Необходимый рисунок:</p>
+            <img src="images/sheme7.png">
+            <p>Результат:</p>
+            <img src="images/result7.png">
+            <br></br>
+        </div>
+
+        <h2>Задача 8</h2>
+        <p>
+            Составить описание объектного типа TMatr, обеспечивающего размещение матрицы произвольного размера, предусмотрев при этом возможность изменения числа строк и столбцов, а также вывода на экран подматрицы любого размера и всей матрицы.
+        </p>
+        <div style="text-align: center;">
+            <p>Диаграмма классов:</p>
+            <img src="images/sheme8.png">
+            <p>Результат:</p>
+            <img src="images/result8.png">
+            <br></br>
+        </div>
+
+        <h2>Задача 9</h2>
+        <p>
+            Итальянская игра «Математико».
+        </p>
+        <div style="text-align: center;">
+            <p>Результат:</p>
+            <img src="images/result9.png">
+            <br></br>
+        </div>
+
+        <h2>Задача 10</h2>
+        <p>
+            N DQ ? ; число без знака. 
+            Не используя арифметические команды, реализовать оператор.
+            (1 вариант) N := N * 2.
+            Решение должно содержать не более трёх команд.          
+        </p>
+        <div style="text-align: center;">
+            <p>Результат:</p>
+            <img src="images/assemb1.png">
+            <br></br>
+        </div>
+        <p>
+            Реализовать процедуру Padd(x,a), которая реализует оператор x:=x+a. 
+            Передача параметров в стеке, стандартные соглашения о связях.
+        </p>
+        <div style="text-align: center;">
+            <p>Результат:</p>
+            <img src="images/assemb2.png">
+            <br></br>
+        </div>
+
+        <div style="text-align: center;">
+            <a href="https://github.com/IPrizOn/java-exercises">Просмотреть файлы задач</a>
+        </div>
+    </article>
 </div>
 
 <div id="page2" class="content">
-    <h1>Разработка АИС</h1>
-    <p>Содержимое второй страницы.</p>
+    <h1>Разработка автоматизированной информационной системы</h1>
+    <article>
+        <h2>Проектирование АИС "Учет комплектующих"</h2>
+        <div style="text-align: center;">
+            <p>ER-диаграмма:</p>
+            <img src="images/diagram1.png">
+            <br></br>
+            <p>Диаграмма вариантов использования:</p>
+            <img src="images/diagram2.png">
+            <br></br>
+            <p>Диаграмма последовательности:</p>
+            <img src="images/diagram3.png">
+            <br></br>
+        </div>
+        <h2>Реализация АИС "Учет комплектующих"</h2>
+        <div style="text-align: center;">
+            <p>Окно авторизации:</p>
+            <img src="images/ais1.png">
+            <br></br>
+            <p>Окно просмотра информации:</p>
+            <img src="images/ais2.png">
+            <br></br>
+            <p>Диалоговое окно добавления:</p>
+            <img src="images/ais3.png">
+            <p>Диалоговое окно изменения:</p>
+            <img src="images/ais4.png">
+            <br></br>
+            <p>Диалоговое окно подтверждения:</p>
+            <img src="images/ais5.png">
+            <br></br>
+            <p>Реализация АИС в 1С:</p>
+            <img src="images/1с.png">
+            <br></br>
+        <div style="text-align: center;">
+            <a href="https://github.com/IPrizOn/ais-component-accounting">Просмотреть файлы АИС на Go</a>
+            <br></br>
+            <a href="https://github.com/IPrizOn/1c-component-accounting">Просмотреть файлы АИС на 1С</a>
+        </div>
+    </article>
 </div>
 
 <div id="page3" class="content">
     <h1>Разработка мобильного приложения</h1>
-    <p>Содержимое третьей страницы.</p>
+    <article>
+        <h2>Реализация мобильного приложения</h2>
+        <div style="text-align: center;">
+            <p>Экран авторизации:</p>
+            <img src="images/mobile1.png">
+            <br></br>
+            <p>Экран просмотра информации:</p>
+            <img src="images/mobile2.png">
+            <br></br>
+            <p>Экран добавления:</p>
+            <img src="images/mobile3.png">
+            <p>Экран изменения:</p>
+            <img src="images/mobile4.png">
+            <br></br>
+            <p>Экран подтверждения:</p>
+            <img src="images/mobile5.png">
+            <br></br>
+        </div>
+        <div style="text-align: center;">
+            <a href="https://github.com/IPrizOn/mobile-component-accounting">Просмотреть файлы мобильного приложения</a>
+        </div>
+    </article>
 </div>
 
 <footer>
-    <div  class="container">
-        <p>&copy; 2024 <a href="https://github.com/IPrizOn/site-component-accounting" target="_blank">Посмотреть код сайта</a></p>
+    <div class="container">
+        <p>
+            &copy; 2024 
+            <a href="https://github.com/IPrizOn/site-component-accounting">Посмотреть код сайта</a>
+            <a style="margin-left: 1000px;" id="back2Top" title="Наверх" href="#">Вернуться наверх</a>
+        </p>
     </div>
 </footer>
 
